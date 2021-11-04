@@ -1,0 +1,16 @@
+[0.101s][info][gc,heap] Heap region size: 1M
+[0.132s][info][gc     ] Using G1
+[0.134s][info][gc,heap,coops] Heap address: 0x00000000a8e00000, size: 1394 MB, Compressed Oops mode: 32-bit
+[2.196s][info][gc,start     ] GC(0) Pause Young (Normal) (G1 Evacuation Pause)
+[2.198s][info][gc,task      ] GC(0) Using 2 workers of 4 for evacuation
+[2.251s][info][gc,phases    ] GC(0)   Pre Evacuate Collection Set: 0.4ms
+[2.252s][info][gc,phases    ] GC(0)   Evacuate Collection Set: 42.2ms
+[2.253s][info][gc,phases    ] GC(0)   Post Evacuate Collection Set: 4.3ms
+[2.254s][info][gc,phases    ] GC(0)   Other: 8.9ms
+[2.255s][info][gc,heap      ] GC(0) Eden regions: 14->0(5)
+[2.256s][info][gc,heap      ] GC(0) Survivor regions: 0->2(2)
+[2.256s][info][gc,heap      ] GC(0) Old regions: 0->9
+[2.264s][info][gc,heap      ] GC(0) Humongous regions: 1->1
+[2.265s][info][gc,metaspace ] GC(0) Metaspace: 9003K->9003K(1058816K)
+[2.266s][info][gc           ] GC(0) Pause Young (Normal) (G1 Evacuation Pause) 15M->11M(32M) 70.684ms
+[2.267s][info][gc,cpu       ] GC(0) User=0.15s Sys=0.02s Real=0.07s

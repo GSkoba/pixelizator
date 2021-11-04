@@ -11,9 +11,16 @@ fun main(args: Array<String>) {
 
     File(inputPath).walkTopDown().forEach {
         if (it.isFile) {
-            val image = ImageIO.read(it)
+            var image = ImageIO.read(it)
 
-            val whiteSquareSize = image.width / whiteSquareCount
+            var newMeasure = if (image.width < image.height) image.width else image.height
+            newMeasure = (newMeasure / whiteSquareCount) * whiteSquareCount
+            val x = (image.width - newMeasure) / 2
+            val y = (image.height - newMeasure) / 2
+
+            image = image.getSubimage(x, y, newMeasure, newMeasure)
+
+            val whiteSquareSize = newMeasure / whiteSquareCount
 
             val g2d = image.createGraphics()
 
